@@ -1,4 +1,8 @@
-# selenium-grid-cloud-base-code
-This is a base code, that we use to start Selenium grid and cloud course
+## Ejecutando los tests
+Para ejecutar los tests utilizar el siguiente comando:
+```json
+mvn clean test -DsuiteXmlFile="LoginTestsLocal.xml"
+```
+Los valores que pueden ir en el parámetro `-DsuiteXmlFile` son `LoginTestsLocal.xml`, `LoginTestsGrid.xml` y `LoginTestsSauce.xml`.
 
-If you are new to Selenium with Java and TestNG, I suggest looking at my courses, and learn how to build project like this here: https://practicetestautomation.com/courses/
+El resultado de los tests se va guardar en la carpeta `target/surefire-reports`.

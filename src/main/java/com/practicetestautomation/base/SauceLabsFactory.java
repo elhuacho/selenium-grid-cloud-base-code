@@ -43,7 +43,7 @@ public class SauceLabsFactory implements SauceOnDemandAuthenticationProvider {
         if (platform.contains("Windows")) {
             sauceOptions.setCapability("screenResolution", "1920x1080");
         } else {
-           // sauceOptions.setCapability("screenResolution", "1920x1440");
+            sauceOptions.setCapability("screenResolution", "1920x1440");
         }
 
         capabilities.setCapability("name", sauceTestName);
